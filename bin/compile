@@ -10,10 +10,10 @@ mkdir -p "$1/bin/"
 echo "-----> Installing regen cli"
 
 # download and install regen binary
-curl -LO https://github.com/regen-network/regen-ledger/releases/download/v5.1.2/regen-ledger_linux_amd64.zip
-echo "c1419d8b3fcfefa8ad8b34c402269963a745f513c77ccda2ef96d575af70dd19  regen-ledger_linux_amd64.zip" | sha256sum -c
-unzip regen-ledger_linux_amd64.zip
-mv regen-ledger_linux_amd64/regen "$1/bin/regen"
+curl -LO https://github.com/regen-network/regen-ledger/releases/download/v6.0.0-rc6/regen-ledger-6.0.0-rc6-linux-amd64.zip
+echo "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5  regen-ledger-6.0.0-rc6-linux-amd64.zip" | sha256sum -c
+unzip regen-ledger-6.0.0-rc6-linux-amd64.zip
+mv regen-ledger-6.0.0-rc6-linux-amd64/regen "$1/bin/regen"
 
 echo "-----> Installing jq"
 
